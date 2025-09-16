@@ -1,0 +1,128 @@
+
+HP@DESKTOP-71VRO1A MINGW64 /d/kamlesh
+$ git clone https://github.com/kamleshnizare/offline7.git
+Cloning into 'offline7'...
+remote: Enumerating objects: 20, done.
+remote: Counting objects: 100% (20/20), done.
+remote: Compressing objects: 100% (14/14), done.
+remote: Total 20 (delta 3), reused 14 (delta 2), pack-reused 0 (from 0)
+Receiving objects: 100% (20/20), done.
+Resolving deltas: 100% (3/3), done.
+
+HP@DESKTOP-71VRO1A MINGW64 /d/kamlesh
+$ git branch 01_maniratnam
+fatal: not a git repository (or any of the parent directories): .git
+
+HP@DESKTOP-71VRO1A MINGW64 /d/kamlesh
+$ git checkout 01_maniratnam
+fatal: not a git repository (or any of the parent directories): .git
+
+HP@DESKTOP-71VRO1A MINGW64 /d/kamlesh
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+HP@DESKTOP-71VRO1A MINGW64 /d/kamlesh
+$ cd "D:\kamlesh\offline7"
+
+HP@DESKTOP-71VRO1A MINGW64 /d/kamlesh/offline7 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+HP@DESKTOP-71VRO1A MINGW64 /d/kamlesh/offline7 (main)
+$ git branch 01_maniratnam
+
+HP@DESKTOP-71VRO1A MINGW64 /d/kamlesh/offline7 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+HP@DESKTOP-71VRO1A MINGW64 /d/kamlesh/offline7 (main)
+$ git check out 01_maniratnam
+git: 'check' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+HP@DESKTOP-71VRO1A MINGW64 /d/kamlesh/offline7 (main)
+$ git checkout 01_maniratnam
+Switched to branch '01_maniratnam'
+
+HP@DESKTOP-71VRO1A MINGW64 /d/kamlesh/offline7 (01_maniratnam)
+$ git status
+On branch 01_maniratnam
+nothing to commit, working tree clean
+
+HP@DESKTOP-71VRO1A MINGW64 /d/kamlesh/offline7 (01_maniratnam)
+$ touch 'mani.txt'
+
+HP@DESKTOP-71VRO1A MINGW64 /d/kamlesh/offline7 (01_maniratnam)
+$ git add .
+
+HP@DESKTOP-71VRO1A MINGW64 /d/kamlesh/offline7 (01_maniratnam)
+$ git status
+On branch 01_maniratnam
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   mani.txt
+
+
+HP@DESKTOP-71VRO1A MINGW64 /d/kamlesh/offline7 (01_maniratnam)
+$ git add .
+
+HP@DESKTOP-71VRO1A MINGW64 /d/kamlesh/offline7 (01_maniratnam)
+$ git push
+fatal: The current branch 01_maniratnam has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin 01_maniratnam
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+HP@DESKTOP-71VRO1A MINGW64 /d/kamlesh/offline7 (01_maniratnam)
+$ git push --set-upstream origin 01_maniratnam
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for '01_maniratnam' on GitHub by visiting:
+remote:      https://github.com/kamleshnizare/offline7/pull/new/01_maniratnam
+remote:
+To https://github.com/kamleshnizare/offline7.git
+ * [new branch]      01_maniratnam -> 01_maniratnam
+branch '01_maniratnam' set up to track 'origin/01_maniratnam'.
+
+HP@DESKTOP-71VRO1A MINGW64 /d/kamlesh/offline7 (01_maniratnam)
+$ git push
+Everything up-to-date
+
+HP@DESKTOP-71VRO1A MINGW64 /d/kamlesh/offline7 (01_maniratnam)
+$ git commit -m "file added by maniratnam:
+> ^C
+
+HP@DESKTOP-71VRO1A MINGW64 /d/kamlesh/offline7 (01_maniratnam)
+$ git commit -m "file added by maniratnam"
+[01_maniratnam 6573ad6] file added by maniratnam
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 mani.txt
+
+HP@DESKTOP-71VRO1A MINGW64 /d/kamlesh/offline7 (01_maniratnam)
+$ git add .
+
+HP@DESKTOP-71VRO1A MINGW64 /d/kamlesh/offline7 (01_maniratnam)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 326 bytes | 326.00 KiB/s, done.
+Total 3 (delta 0), reused 1 (delta 0), pack-reused 0 (from 0)
+To https://github.com/kamleshnizare/offline7.git
+   e068ff9..6573ad6  01_maniratnam -> 01_maniratnam
+
+HP@DESKTOP-71VRO1A MINGW64 /d/kamlesh/offline7 (01_maniratnam)
+$
